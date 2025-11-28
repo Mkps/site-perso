@@ -5,4 +5,6 @@ avatarImage:
 githubCalendar: 'Mkps'
 ---
 
-Welcome to the example site. This site is meant to show off my custom Astro theme/template **MultiTerm** which creates a coder-ready blog complete with an interactive theme changer, RSS, sitemap, tagging, and markdown extensions.
+Étudiant en architecture informatique à l’École 42, passionné par la cybersécurité, l’IA et le développement système.
+Je conçois des outils open source, participe à des hackathons et travaille sur des projets mêlant Linux, DevOps, IA et C/C++.
+Toujours en quête de nouveaux défis techniques.
