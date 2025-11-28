@@ -76,11 +76,11 @@ export default defineConfig({
     }), // Must come after expressive-code integration
     mdx(),
   ],
-  i18n: {
-    locales: ["en", "fr"],
-    defaultLocale: "en",
-    routing: "manual",
-  },
+  // i18n: {
+  //   locales: ["en", "fr"],
+  //   defaultLocale: "en",
+  //   routing: "manual",
+  // },
   experimental: {
     contentIntellisense: true,
   },
