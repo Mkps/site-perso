@@ -154,7 +154,7 @@ const config: SiteConfig = {
     github: 'https://github.com/mkps',
     mastodon: 'https://github.com/mkps',
     email: 'alex.loubiere@gmail.com',
-    linkedin: 'https://www.linkedin.com/in/alexis-loubiere-fr/'
+    linkedin: 'https://www.linkedin.com/in/alexis-loubiere-fr/',
     bluesky: 'https://github.com/mkps',
     twitter: 'https://github.com/mkps',
     rss: true, // Set to true to include an RSS feed link in the footer
