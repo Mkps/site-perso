@@ -162,6 +162,7 @@ export type GiscusConfig = {
   category: string
   categoryId: string
   reactionsEnabled: boolean
+  lang: string
 }
 
 export interface SiteConfig {

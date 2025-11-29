@@ -10,6 +10,7 @@ const repo = giscusConfig.repo
 const repoId = giscusConfig.repoId
 const category = giscusConfig.category
 const categoryId = giscusConfig.categoryId
+const lang = giscusConfig.lang
 const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
 ---
 
@@ -21,6 +22,7 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
   data-category={category}
   data-category-id={categoryId}
   data-reactions-enabled={reactionsEnabled}
+  data-lang={lang}
 >
 </div>
 <script>
@@ -35,6 +37,7 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
     const category = giscusDiv.getAttribute('data-category')
     const categoryId = giscusDiv.getAttribute('data-category-id')
     const reactionsEnabled = giscusDiv.getAttribute('data-reactions-enabled')
+    const lang = giscusDiv.getAttribute('data-lang')
     const theme = document.documentElement.getAttribute('data-theme')
     if (
       !origin ||
@@ -43,7 +46,8 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
       !category ||
       !categoryId ||
       !reactionsEnabled ||
-      !theme
+      !theme ||
+      !lang
     ) {
       throw new Error('Giscus configuration missing in the Giscus div.')
     }
@@ -60,7 +64,7 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
     // Setting this to 'bottom' doesn't work. Not sure why.
     script.setAttribute('data-input-position', 'top')
     script.setAttribute('data-theme', `${origin}/giscus/${theme}.css`)
-    script.setAttribute('data-lang', 'en')
+    script.setAttribute('data-lang', lang)
     script.setAttribute('loading', 'lazy')
     script.crossOrigin = 'anonymous'
     script.async = true
